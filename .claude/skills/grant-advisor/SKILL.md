@@ -29,7 +29,7 @@ If `grants/{slug}/` does not exist, copy `grants/_TEMPLATE/` to `grants/{slug}/`
 Follow the `solicitation-review` skill to extract the structured requirements brief and write it to `grants/{slug}/solicitation.md`: funder and program, key dates, eligibility, award size, review criteria (quoted), required components with page limits, and formatting rules.
 
 ### 4. Evaluate fit (grant-analyzer)
-Follow the `grant-analyzer` skill. Read the `profile/` files plus the parsed `solicitation.md`, and write `grants/{slug}/evaluation.md`: fit by dimension, the gaps a reviewer would flag, and a recommendation. Be honest; a flattering evaluation wastes months.
+Follow the `grant-analyzer` skill. Read the `profile/` files, the parsed `solicitation.md`, and any sources in the grant's `literature/` folder, then write `grants/{slug}/evaluation.md`: fit by dimension, the gaps a reviewer would flag, and a recommendation. Be honest; a flattering evaluation wastes months. Ground every claim in the profile or the literature; never invent results or citations.
 
 ### 5. Decide
 From the evaluation, set one decision and put it at the very top of `evaluation.md`:

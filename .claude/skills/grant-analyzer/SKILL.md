@@ -20,6 +20,8 @@ Load the profile from this project's `profile/` directory:
 
 If any profile files are missing or still have blank template prompts, note it but proceed with what's available. Do not ask the user to provide information that should be in their profile -- tell them which profile file to fill in instead.
 
+Also read the grant's `literature/` folder if it has any sources (papers, notes, references the researcher dropped in). Ground your analysis in those and in the profile. Never invent a statistic, citation, or result; if something is not supported by the profile or the literature, say so.
+
 ## Input
 
 The user will provide one of:

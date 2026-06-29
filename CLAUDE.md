@@ -27,7 +27,7 @@ When the researcher first opens this project, greets you, or seems unsure where 
   - `latex-assistant/` — set up LaTeX, scaffold a compliant `main.tex`, compile, fix errors, and render versioned PDFs. Owns document mechanics, not narrative.
   - `nsf-broader-impacts/` — draft a scored-well NSF Broader Impacts section from the profile's mentoring/outreach record (a specialization of `grant-writing`). More NSF-section skills to follow.
   When the researcher names a skill or asks for a task one covers, read the matching `.claude/skills/<name>/SKILL.md` and follow it.
-- `grants/` — **one folder per grant being pursued.** Each holds `solicitation.md` (the opportunity), `evaluation.md` (from grant-analyzer), `team.md` (who is on *that* proposal), and `proposal/` (the draft, with `versions/` for rendered PDFs and `feedback/` for the researcher's notes per round). Copy `grants/_TEMPLATE/` to start a new one. See `grants/README.md` and the worked `grants/EXAMPLE-NSF-HBCU-EiR/`.
+- `grants/` is **one folder per grant being pursued.** Each holds `solicitation.md` (the parsed opportunity), `evaluation.md` (fit plus the Pursue / Considering / Don't Pursue decision), `team.md` (who is on *that* proposal), a `literature/` folder (drop papers and references here so the AI grounds claims in real sources instead of hallucinating), and `proposal/` (the draft: `main.tex`, `budget.xlsx`, `budget-justification.tex`, `versions/` for rendered PDFs, and `feedback/` for the researcher's per-version notes). Copy `grants/_TEMPLATE/` to start one, or let `grant-advisor` create it. `grant-tracker.xlsx` logs every grant. See `grants/README.md`.
 
 ## The five-stage workflow
 

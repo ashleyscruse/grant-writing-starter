@@ -30,13 +30,41 @@ If none is installed, do not fake a build. Tell the researcher the one install s
 
 ## Budget justification
 
-When asked, read `proposal/budget.csv` and render `proposal/budget-justification.tex` into the PDF. The numbers come from the CSV; the prose comes from `grant-writing`. Your job is to make it typeset cleanly and stay within any page limit.
+When asked, read `proposal/budget.xlsx` and render `proposal/budget-justification.tex` into the PDF. The numbers come from the spreadsheet; the prose comes from `grant-writing`. Your job is to make it typeset cleanly and stay within any page limit.
 
 ## Compiling and versioning
 
 - Build from inside the grant's `proposal/` folder.
 - Output the PDF to `proposal/versions/` as the next `vN.pdf`. **Never overwrite an older version.** If `v1.pdf` exists, write `v2.pdf`.
 - After a successful build, report the page count and confirm it is within the solicitation's page limit. If it is over, say so plainly and point to the section to cut; do not silently shrink margins or font below the rules.
+
+## Create a matching feedback file for every version
+
+Every time you render `versions/vN.pdf`, also create `feedback/vN-feedback.md` if it does not already exist, pre-filled so the researcher only has to type their notes.
+
+- Build it with one heading per section that the proposal actually contains, in order. Read the section structure from `proposal/main.tex` (its `\section`/`\section*` titles); if the draft has no sections yet, fall back to the required components in `solicitation.md`.
+- Under each section heading, leave an empty bullet for the researcher's notes. Add a final **General / overall** heading and a **Compliance (page limit, formatting)** heading.
+- Do not write feedback yourself; the file is the researcher's to fill in. Once they say there is feedback, read `feedback/vN-feedback.md`, carry every point through, and render the next `vN+1.pdf`.
+
+Template shape:
+
+```markdown
+# Feedback on vN
+
+> Fill in your notes under each section, then tell the AI "there's feedback on vN."
+
+## <Section 1 title>
+-
+
+## <Section 2 title>
+-
+
+## General / overall
+-
+
+## Compliance (page limit, formatting)
+-
+```
 
 ## Fixing errors
 
