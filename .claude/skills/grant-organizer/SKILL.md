@@ -18,7 +18,7 @@ Keep one source of truth for the researcher's grant pipeline in `grants/grant-tr
   4. `Deadline`
   5. `Award Range`
   6. `Fit Rating` — Strong / Moderate / Weak / Not eligible
-  7. `Decision` — Go / No-go / Exploring
+  7. `Decision` — Pursue / Considering / Don't Pursue
   8. `Status` — Reviewing / Drafting / Submitted / Awarded / Declined
   9. `Date Reviewed`
   10. `Folder` — `grants/{name}/`

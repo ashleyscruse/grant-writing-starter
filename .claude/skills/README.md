@@ -5,8 +5,9 @@ Reusable `SKILL.md` instructions, one per task. A skill packages a repeatable jo
 | Skill | What it does | When it runs |
 |---|---|---|
 | `setup-guide` | **Sage** — onboards you and fills in your profile | First contact, or "help me get set up" |
+| `grant-advisor` | **End-to-end intake.** Takes a URL or PDF, parses it, evaluates fit, decides (Pursue / Considering / Don't Pursue), logs the tracker, and saves a grant folder | You paste a solicitation and ask "should I pursue this?" |
 | `solicitation-review` | Parses a solicitation into a structured requirements brief (dates, eligibility, criteria, page limits) | You paste an RFP/NOFO and want it broken down |
-| `grant-analyzer` | Evaluates a solicitation against your profile: fit, eligibility, gaps, go/no-go | You ask "should I apply?" |
+| `grant-analyzer` | Evaluates a solicitation against your profile: fit, eligibility, gaps, recommendation | You ask for a fit assessment |
 | `grant-organizer` | Logs every reviewed grant to `grants/grant-tracker.xlsx` so you see your pipeline at a glance | You evaluate a grant or ask "what am I tracking?" |
 | `grant-writing` | Drafts and revises proposal sections, mapped to the funder's review rubric | You ask to write/revise any proposal section |
 | `latex-assistant` | Sets up LaTeX, scaffolds a compliant `main.tex`, compiles, and renders versioned PDFs | You ask to set up, compile, or render the proposal |

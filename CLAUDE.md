@@ -19,6 +19,7 @@ When the researcher first opens this project, greets you, or seems unsure where 
   - `institutions/` — one folder per institution. Each holds a `profile.md` plus its facilities document and letters. Skip the `_TEMPLATE/` folder.
 - `.claude/skills/` — reusable `SKILL.md` instructions, one per task. (Hidden machinery the researcher never needs to open; you load it automatically.)
   - `setup-guide/` — **Sage**, the onboarding guide. Run on first contact.
+  - `grant-advisor/` — **end-to-end intake.** Given a solicitation URL or PDF, runs the whole opportunity loop in order (parse, evaluate fit, decide Pursue / Considering / Don't Pursue, log the tracker, save a `grants/{name}/` folder with `solicitation.md` and `evaluation.md`). The researcher's "should I pursue this?" becomes one command. Stops at the decision; does not draft.
   - `solicitation-review/` — parse a solicitation into a structured requirements brief (dates, eligibility, criteria, page limits, formatting). Runs before fit and drafting.
   - `grant-analyzer/` — evaluate a solicitation against the profile (fit, eligibility, gaps, go/no-go).
   - `grant-organizer/` — log every reviewed grant to `grants/grant-tracker.xlsx` (funder, deadline, fit, decision, status) so the whole pipeline is visible at a glance.
