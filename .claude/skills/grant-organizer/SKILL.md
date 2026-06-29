@@ -1,79 +1,102 @@
 ---
 name: grant-organizer
-description: "Maintains a spreadsheet tracker of every grant reviewed, with funder, deadline, fit rating, go/no-go decision, and status, so the researcher can see their whole pipeline at a glance. Updates grants/grant-tracker.xlsx whenever a grant is evaluated or its status changes. Use when the user asks to log a grant, update the tracker, see their grant pipeline, or 'add this to my tracker.' Also use when the user mentions 'tracker,' 'log this grant,' 'grant pipeline,' 'what grants am I tracking,' 'update status,' or 'go/no-go list.'"
+description: "Maintains a spreadsheet tracker of every grant reviewed: agency, program, PI role, deadlines, routing, amount, fit, decision, and status, so the researcher sees their whole pipeline at a glance. Updates grants/grant-tracker.xlsx whenever a grant is evaluated or its status changes. Use when the user asks to log a grant, update the tracker, see their grant pipeline, or 'add this to my tracker.' Also use when the user mentions 'tracker,' 'log this grant,' 'grant pipeline,' 'what grants am I tracking,' 'update status,' or 'routing.'"
 ---
 
 # Grant Organizer
 
-Keep one source of truth for the researcher's grant pipeline in `grants/grant-tracker.xlsx`. Every opportunity they review lands here with its fit rating, decision, and current status, so they can see at a glance what is worth pursuing, what is in progress, and what deadlines are coming.
+Keep one source of truth for the researcher's grant pipeline in `grants/grant-tracker.xlsx`. Every opportunity they review lands here, so they can see at a glance what is worth pursuing, what is routing, and what deadlines are coming.
 
 ## The tracker
 
 - **Location:** `grants/grant-tracker.xlsx`, sheet named `Grants`.
-- **One row per grant.** Never create a second row for a grant that is already listed; update it in place.
+- **One row per grant.** Never create a second row for a grant already listed; update it in place.
 - **Columns (in order):**
-  1. `Grant / Opportunity`
-  2. `Funder`
-  3. `Program / Opportunity #`
-  4. `Deadline`
-  5. `Award Range`
-  6. `Fit Rating` — Strong / Moderate / Weak / Not eligible
-  7. `Decision` — Pursue / Considering / Don't Pursue
-  8. `Status` — Reviewing / Drafting / Submitted / Awarded / Declined
-  9. `Date Reviewed`
-  10. `Folder` — `grants/{name}/`
-  11. `Notes`
+  1. `Name` (the opportunity title; this is the match key)
+  2. `Agency`
+  3. `Program`
+  4. `Website`
+  5. `I'm PI?` (Yes / No)
+  6. `Co-PIs / Lead`
+  7. `Amount`
+  8. `LOI Date`
+  9. `Due Date`
+  10. `Route By`
+  11. `Target Submit`
+  12. `Routed?` (Yes / No)
+  13. `Previously Submitted?` (Yes / No)
+  14. `Fit Rating` (Strong / Moderate / Weak / Not eligible)
+  15. `Decision` (Pursue / Considering / Don't Pursue)
+  16. `Status` (Reviewing / Drafting / Submitted / Awarded / Declined)
+  17. `Notes`
 
-If the file does not exist, create it with the header row before adding data.
+Columns 14, 15, 16 and the three Yes/No columns are dropdowns (data validation). Use the exact allowed values so the dropdowns stay valid.
+
+## Who fills what
+
+- **You (the AI) fill** the fields you can derive: `Name`, `Agency`, `Program`, `Website`, `Amount`, `LOI Date`, `Due Date`, `Fit Rating`, `Decision`, `Status`. Pull `Fit Rating` / `Decision` from `evaluation.md`, and dates / amount from `solicitation.md`.
+- **The researcher fills** the operational calls: `I'm PI?`, `Co-PIs / Lead`, `Route By`, `Target Submit`, `Routed?`, `Previously Submitted?`. **Never overwrite a value the researcher already entered.** When updating a row, only write cells you have a new value for; leave the rest untouched.
 
 ## When to run
 
-- **After `grant-analyzer` writes an evaluation:** add or update that grant's row. Pull `Fit Rating` and `Decision` from the recommendation in `grants/{name}/evaluation.md`, and `Deadline` / `Award Range` from `grants/{name}/solicitation.md`.
-- **When the researcher changes a decision or status** (e.g., "mark the NSF EiR as submitted").
-- **When asked to show the pipeline:** read the tracker and present a quick markdown summary, sorted by nearest deadline.
+- **After a grant is evaluated** (`grant-advisor` / `grant-analyzer`): add or update that grant's row.
+- **When the researcher changes a status or detail** (e.g., "mark the NSF EiR as routed," "we submitted it").
+- **When asked to show the pipeline:** read the tracker and present a short markdown summary, sorted by nearest `Due Date`.
 
 ## How to update (openpyxl)
 
-Use `openpyxl`. Match on the `Folder` value (or `Grant / Opportunity` if no folder yet): if a matching row exists, update its cells; otherwise append a new row. Then save and show the researcher a short summary of what changed.
+Match on `Name`. If a matching row exists, update only the cells you have values for; otherwise append. If the file does not exist, create it with the header row and the dropdowns.
 
 ```python
 from pathlib import Path
 from openpyxl import load_workbook, Workbook
+from openpyxl.styles import Font
+from openpyxl.worksheet.datavalidation import DataValidation
 
-HEADERS = ["Grant / Opportunity","Funder","Program / Opportunity #","Deadline",
-           "Award Range","Fit Rating","Decision","Status","Date Reviewed","Folder","Notes"]
+HEADERS = ["Name","Agency","Program","Website","I'm PI?","Co-PIs / Lead","Amount",
+           "LOI Date","Due Date","Route By","Target Submit","Routed?","Previously Submitted?",
+           "Fit Rating","Decision","Status","Notes"]
+LISTS = {  # column letter -> dropdown values
+    "E": ["Yes","No"], "L": ["Yes","No"], "M": ["Yes","No"],
+    "N": ["Strong","Moderate","Weak","Not eligible"],
+    "O": ["Pursue","Considering","Don't Pursue"],
+    "P": ["Reviewing","Drafting","Submitted","Awarded","Declined"],
+}
 path = Path("grants/grant-tracker.xlsx")
 
 if path.exists():
     wb = load_workbook(path); ws = wb["Grants"]
 else:
-    wb = Workbook(); ws = wb.active; ws.title = "Grants"; ws.append(HEADERS)
+    wb = Workbook(); ws = wb.active; ws.title = "Grants"
+    ws.append(HEADERS)
+    for c in ws[1]: c.font = Font(bold=True)
+    for col, opts in LISTS.items():
+        dv = DataValidation(type="list", formula1='"%s"' % ",".join(opts), allow_blank=True)
+        dv.add("%s2:%s500" % (col, col)); ws.add_data_validation(dv)
 
-row = {  # fill from solicitation.md + evaluation.md
-    "Grant / Opportunity": "...", "Funder": "...", "Program / Opportunity #": "...",
-    "Deadline": "...", "Award Range": "...", "Fit Rating": "...", "Decision": "...",
-    "Status": "Reviewing", "Date Reviewed": "...", "Folder": "grants/.../", "Notes": "",
-}
+# Only include keys you actually have a value for (so you never blank the researcher's fields).
+row = {"Name": "...", "Agency": "...", "Fit Rating": "...", "Decision": "...", "Status": "Reviewing"}
 
-# update in place if the folder/name already exists, else append
-match_col = HEADERS.index("Folder") + 1
+match_col = HEADERS.index("Name") + 1
 target = None
 for r in range(2, ws.max_row + 1):
-    if ws.cell(r, match_col).value == row["Folder"]:
+    v = ws.cell(r, match_col).value
+    if v and v.strip().lower() == row["Name"].strip().lower():
         target = r; break
 if target is None:
-    ws.append([row[h] for h in HEADERS])
+    ws.append([row.get(h, "") for h in HEADERS])
 else:
     for i, h in enumerate(HEADERS, start=1):
-        ws.cell(target, i, row[h])
+        if h in row:                      # update only provided fields; leave the rest
+            ws.cell(target, i, row[h])
 
 wb.save(path)
 ```
 
-Do not hardcode the date; read it from the system or ask the researcher. Keep the column order fixed so the file stays consistent across updates.
+Do not hardcode dates; read them from the system or the solicitation. Keep the column order fixed.
 
 ## What this skill does NOT do
 
-- Evaluate fit or recommend go/no-go (that is `grant-analyzer`).
+- Evaluate fit or recommend a decision (that is `grant-analyzer` / `grant-advisor`).
 - Write or render any proposal section (that is `grant-writing` / `latex-assistant`).
 - It records and reports the pipeline; it does not judge.

@@ -39,7 +39,7 @@ From the evaluation, set one decision and put it at the very top of `evaluation.
 - **Don't Pursue**: not eligible, or the fit and gaps make it a poor use of time.
 
 ### 6. Log it (grant-organizer)
-Follow the `grant-organizer` skill to add or update this grant's row in `grants/grant-tracker.xlsx`: opportunity, funder, program, deadline, award range, fit rating, **decision** (Pursue / Considering / Don't Pursue), status (`Reviewing`), date reviewed, the `grants/{slug}/` folder, and a one-line note.
+Follow the `grant-organizer` skill to add or update this grant's row in `grants/grant-tracker.xlsx`. Fill the fields you can derive: `Name`, `Agency`, `Program`, `Website`, `Amount`, `LOI Date`, `Due Date`, `Fit Rating`, **`Decision`** (Pursue / Considering / Don't Pursue), and `Status` (`Reviewing`). Leave the operational columns (`I'm PI?`, `Co-PIs / Lead`, `Route By`, `Target Submit`, `Routed?`, `Previously Submitted?`) for the researcher, and never overwrite a value they already entered.
 
 ### 7. Report
 Tell the researcher, briefly:
