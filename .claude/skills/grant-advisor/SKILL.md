@@ -34,9 +34,9 @@ Follow the `grant-analyzer` skill. Read the `profile/` files plus the parsed `so
 ### 5. Decide
 From the evaluation, set one decision and put it at the very top of `evaluation.md`:
 
-- **Pursue** — eligible, fit is real, and the gaps are addressable before the deadline.
-- **Considering** — eligible with meaningful alignment, but significant gaps remain or it warrants a closer look or a conversation with the program officer.
-- **Don't Pursue** — not eligible, or the fit and gaps make it a poor use of time.
+- **Pursue**: eligible, fit is real, and the gaps are addressable before the deadline.
+- **Considering**: eligible with meaningful alignment, but significant gaps remain or it warrants a closer look or a conversation with the program officer.
+- **Don't Pursue**: not eligible, or the fit and gaps make it a poor use of time.
 
 ### 6. Log it (grant-organizer)
 Follow the `grant-organizer` skill to add or update this grant's row in `grants/grant-tracker.xlsx`: opportunity, funder, program, deadline, award range, fit rating, **decision** (Pursue / Considering / Don't Pursue), status (`Reviewing`), date reviewed, the `grants/{slug}/` folder, and a one-line note.
