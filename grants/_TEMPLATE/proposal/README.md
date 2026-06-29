@@ -5,15 +5,16 @@ Your draft goes here.
 ```
 proposal/
   main.tex                  the page-limited narrative
-  budget.xlsx               budget numbers (Excel / Google Sheets; the AI reads it)
-  budget-justification.tex  budget narrative, drafted from budget.xlsx
+  budget-justification.tex  budget narrative, drafted from ../budget.xlsx
   versions/                 rendered PDFs, one per round
   feedback/                 your notes per round
 ```
 
+Budget numbers live one level up, in the grant's `budget.xlsx` (next to `team.md`).
+
 **The loop:** render the current draft to `versions/v1.pdf`; write notes in `feedback/v1-feedback.md`; ask the AI to revise (it reads the feedback and renders `versions/v2.pdf`). Old versions stay in `versions/`; the highest number is current.
 
-**Budget:** keep numbers in `budget.xlsx`, words in `budget-justification.tex`; the AI drafts the justification from the sheet.
+**Budget:** keep numbers in the grant's `budget.xlsx` (one level up), words in `budget-justification.tex`; the AI drafts the justification from the sheet.
 
 **Sources:** put papers and references in the grant's `literature/` folder so the AI grounds claims in real sources instead of guessing.
 

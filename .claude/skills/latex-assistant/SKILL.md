@@ -30,7 +30,7 @@ If none is installed, do not fake a build. Tell the researcher the one install s
 
 ## Budget justification
 
-When asked, read `proposal/budget.xlsx` and render `proposal/budget-justification.tex` into the PDF. The numbers come from the spreadsheet; the prose comes from `grant-writing`. Your job is to make it typeset cleanly and stay within any page limit.
+When asked, read the grant's `budget.xlsx` (one level up from `proposal/`, at the grant root) and render `proposal/budget-justification.tex` into the PDF. The numbers come from the spreadsheet; the prose comes from `grant-writing`. Your job is to make it typeset cleanly and stay within any page limit.
 
 ## Compiling and versioning
 
