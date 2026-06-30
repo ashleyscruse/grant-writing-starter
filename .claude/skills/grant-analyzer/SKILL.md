@@ -10,11 +10,11 @@ Evaluate grant opportunities against your profile to determine fit, strategic va
 ## Before You Start
 
 Load the profile from this project's `profile/` directory:
-- `you/identity.md` -- positions, education, skills
-- `you/research.md` -- research focus, publications, active agenda
-- `you/teaching-mentoring.md` -- mentoring track record, programs, curricula
-- `you/grant-history.md` -- past grants, strengths, known gaps
-- `you/` -- also read any CV or biosketch documents dropped in this folder
+- `me/identity.md` -- positions, education, skills
+- `me/research.md` -- research focus, publications, active agenda
+- `me/teaching-mentoring.md` -- mentoring track record, programs, curricula
+- `me/grant-history.md` -- past grants, strengths, known gaps
+- `me/` -- also read any CV or biosketch documents dropped in this folder
 - `institutions/` -- one folder per institution: read each `profile.md`, its strategic plan, and any facilities documents (skip `_TEMPLATE/`)
 - `collaborators/` -- one folder per collaborator: read each `profile.md` and any CV/biosketch (skip `_TEMPLATE/`)
 

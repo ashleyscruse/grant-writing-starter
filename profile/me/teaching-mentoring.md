@@ -2,7 +2,7 @@
 
 Many grants, especially NSF, weight broader impacts heavily. Strong mentoring numbers and program leadership can make or break a proposal. Be specific with counts and outcomes.
 
-Fill this in directly (Sage can interview you and write your answers in for you). This file is `profile/you/teaching-mentoring.md` — already where the AI looks for it.
+Fill this in directly (Sage can interview you and write your answers in for you). This file is `profile/me/teaching-mentoring.md` — already where the AI looks for it.
 
 ---
 

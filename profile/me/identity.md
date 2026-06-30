@@ -2,7 +2,7 @@
 
 Fill in each section below. Be specific -- this document is how AI tools understand who you are professionally.
 
-Fill this in directly (Sage can interview you and write your answers in for you). This file is `profile/you/identity.md` — already where the AI looks for it.
+Fill this in directly (Sage can interview you and write your answers in for you). This file is `profile/me/identity.md` — already where the AI looks for it.
 
 ---
 

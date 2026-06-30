@@ -2,7 +2,7 @@
 
 This is the most important profile document for grant analysis. The more specific you are about your research, the better Claude can match you to opportunities.
 
-Fill this in directly (Sage can interview you and write your answers in for you). This file is `profile/you/research.md` — already where the AI looks for it.
+Fill this in directly (Sage can interview you and write your answers in for you). This file is `profile/me/research.md` — already where the AI looks for it.
 
 ---
 

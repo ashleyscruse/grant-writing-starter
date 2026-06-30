@@ -9,7 +9,7 @@ When the researcher first opens this project, greets you, or seems unsure where 
 ## How this workspace is organized
 
 - `profile/` — **the researcher's reusable context.** The knowledge base every skill reads, the same for every grant. Blank until filled; the setup guide helps fill it. Three parts:
-  - `you/` — who they are. Read these for any analysis or drafting:
+  - `me/` — who they are. Read these for any analysis or drafting:
     - `identity.md` — name, positions, education, skills
     - `research.md` — research focus, publications, active agenda (the most important file for fit analysis)
     - `teaching-mentoring.md` — mentoring record, programs, courses (drives NSF broader-impacts narratives)

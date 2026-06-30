@@ -13,8 +13,8 @@ This skill is a specialization of `grant-writing`. All of that skill's voice and
 
 Read, in this order:
 - `grants/{name}/solicitation.md` — the program's specific BI expectations and any program-specific broadening-participation priorities. Mirror its language.
-- `profile/you/teaching-mentoring.md` — the researcher's real mentoring counts, programs led, courses, and outreach. **This is the evidence base for BI.** Use actual numbers and named programs, not invented activities.
-- `profile/you/research.md` and `profile/institutions/` — institutional context (HBCU/MSI mission, existing pipelines, partnerships) that makes the plan credible.
+- `profile/me/teaching-mentoring.md` — the researcher's real mentoring counts, programs led, courses, and outreach. **This is the evidence base for BI.** Use actual numbers and named programs, not invented activities.
+- `profile/me/research.md` and `profile/institutions/` — institutional context (HBCU/MSI mission, existing pipelines, partnerships) that makes the plan credible.
 
 If `teaching-mentoring.md` is still a blank template, say so and point the researcher to fill it (or to Sage) before drafting. Do not invent outreach the researcher has not done.
 

@@ -2,7 +2,7 @@
 
 This document is where honesty matters most. The Gaps section is what prevents you from spending months on proposals you can't win. A grant analyzer that doesn't know your weaknesses will give you false encouragement.
 
-Fill this in directly (Sage can interview you and write your answers in for you). This file is `profile/you/grant-history.md` — already where the AI looks for it.
+Fill this in directly (Sage can interview you and write your answers in for you). This file is `profile/me/grant-history.md` — already where the AI looks for it.
 
 ---
 

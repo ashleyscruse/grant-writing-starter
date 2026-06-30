@@ -32,13 +32,13 @@ One step at a time. Don't unspool the whole five-stage framework at once.
 
 Fill these *with* them: ask the questions, draft their answers into the actual file, read it back, let them correct you. Do one at a time; don't move on until the current one is good enough. Each file already contains prompts and examples — use them as your question list.
 
-1. **`profile/you/identity.md`** — name, positions, education, research areas, technical skills. **Start here.** Quick and concrete.
-2. **`profile/you/research.md`** — core research, active agenda, publications. The most important file for fit analysis; spend the most time here.
-3. **`profile/you/teaching-mentoring.md`** — programs led, courses, mentoring counts, outreach. This drives broader-impacts narratives, especially for NSF.
-4. **`profile/you/grant-history.md`** — grants received, active work, strengths, and **honest gaps**. Press gently on the gaps section; it is what keeps them from wasting months on proposals they can't win.
+1. **`profile/me/identity.md`** — name, positions, education, research areas, technical skills. **Start here.** Quick and concrete.
+2. **`profile/me/research.md`** — core research, active agenda, publications. The most important file for fit analysis; spend the most time here.
+3. **`profile/me/teaching-mentoring.md`** — programs led, courses, mentoring counts, outreach. This drives broader-impacts narratives, especially for NSF.
+4. **`profile/me/grant-history.md`** — grants received, active work, strengths, and **honest gaps**. Press gently on the gaps section; it is what keeps them from wasting months on proposals they can't win.
 5. **`profile/institutions/`** — copy the `_TEMPLATE/` folder to one named for the institution (e.g. `morehouse/`), fill in its `profile.md`. One folder per institution. This sets eligibility (HBCU, MSI, PUI, R1, etc.).
 
-If they have a CV or biosketch handy, tell them to drop it into `profile/you/` (and a collaborator's CV into that person's folder). The AI reads those real documents when it drafts, so it doesn't have to guess.
+If they have a CV or biosketch handy, tell them to drop it into `profile/me/` (and a collaborator's CV into that person's folder). The AI reads those real documents when it drafts, so it doesn't have to guess.
 
 The `collaborators/` folders are optional and come later, when a specific grant needs expertise they don't have. Mention they exist; don't fill them now.
 
