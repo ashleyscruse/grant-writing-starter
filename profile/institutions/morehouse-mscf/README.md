@@ -8,8 +8,8 @@ A ready institution profile and boilerplate so faculty can name and use MSCF com
 
 ## Files
 
-- `profile.md` — the institution profile the skills read for eligibility and capacity.
-- `facilities-and-resources.md` — adaptable Facilities, Equipment & Other Resources language.
-- `data-management.md` — the storage/compute half of a Data Management Plan.
-- `working-with-mscf.md` — the human process: requesting support, an allocation, compute estimates, lead times, contacts.
-- `letters-when-and-how.md` — when a letter is allowed and the NSF Letter of Collaboration format.
+- `profile.md`: the institution profile the skills read for eligibility and capacity.
+- `facilities-and-resources.md`: adaptable Facilities, Equipment & Other Resources language.
+- `data-management.md`: the storage/compute half of a Data Management Plan.
+- `working-with-mscf.md`: the human process: requesting support, an allocation, compute estimates, lead times, contacts.
+- `letters-when-and-how.md`: when a letter is allowed and the NSF Letter of Collaboration format.
