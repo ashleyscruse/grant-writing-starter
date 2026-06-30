@@ -17,6 +17,7 @@ Load the profile from this project's `profile/` directory:
 - `you/` -- also read any CV or biosketch documents dropped in this folder
 - `institutions/` -- one folder per institution: read each `profile.md` and any facilities documents (skip `_TEMPLATE/`)
 - `collaborators/` -- one folder per collaborator: read each `profile.md` and any CV/biosketch (skip `_TEMPLATE/`)
+- `alignment/` -- the institution's strategic plan and the funder's / federal priorities to align with
 
 If any profile files are missing or still have blank template prompts, note it but proceed with what's available. Do not ask the user to provide information that should be in their profile -- tell them which profile file to fill in instead.
 
@@ -66,6 +67,7 @@ Evaluate the PI's profile against the grant requirements across these dimensions
 
 **Strategic Value:**
 - Does this advance the PI's research agenda?
+- Does it align with the institution's strategic plan and the funder's stated priorities (see `profile/alignment/`)?
 - Does it complement or compete with active/planned grants?
 - Is the funding level appropriate for the work proposed?
 - Does the timeline align with PI's availability?
