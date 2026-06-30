@@ -16,8 +16,7 @@ When the researcher first opens this project, greets you, or seems unsure where 
     - `grant-history.md` — past grants, strengths, and **honest gaps** (the gaps section is what prevents wasted effort)
     - plus any documents they dropped in (CV, biosketch, current-and-pending). Read them when a section needs that detail.
   - `collaborators/` — one folder per person (current or prospective). Each holds a `profile.md` plus their CV / biosketch. Skip the `_TEMPLATE/` folder.
-  - `institutions/` — one folder per institution. Each holds a `profile.md` plus its facilities document and letters. Skip the `_TEMPLATE/` folder.
-  - `priorities/` — drop the institution, funder, and federal strategic-plan / priority docs here; the AI reads them to match the proposal framing to what they fund.
+  - `institutions/` — one folder per institution. Each holds a `profile.md` plus its strategic plan, facilities document, and letters. Skip the `_TEMPLATE/` folder.
 - `.claude/skills/` — reusable `SKILL.md` instructions, one per task. (Hidden machinery the researcher never needs to open; you load it automatically.)
   - `setup-guide/` — **Sage**, the onboarding guide. Run on first contact.
   - `grant-advisor/` — **end-to-end intake.** Given a solicitation URL or PDF, runs the whole opportunity loop in order (parse, evaluate fit, decide Pursue / Considering / Don't Pursue, log the tracker, save a `grants/{name}/` folder with `solicitation.md` and `evaluation.md`). The researcher's "should I pursue this?" becomes one command. Stops at the decision; does not draft.

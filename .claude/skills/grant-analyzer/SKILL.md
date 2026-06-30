@@ -15,9 +15,8 @@ Load the profile from this project's `profile/` directory:
 - `you/teaching-mentoring.md` -- mentoring track record, programs, curricula
 - `you/grant-history.md` -- past grants, strengths, known gaps
 - `you/` -- also read any CV or biosketch documents dropped in this folder
-- `institutions/` -- one folder per institution: read each `profile.md` and any facilities documents (skip `_TEMPLATE/`)
+- `institutions/` -- one folder per institution: read each `profile.md`, its strategic plan, and any facilities documents (skip `_TEMPLATE/`)
 - `collaborators/` -- one folder per collaborator: read each `profile.md` and any CV/biosketch (skip `_TEMPLATE/`)
-- `priorities/` -- any institution, funder, or federal strategic-plan docs dropped in, to match the proposal to
 
 If any profile files are missing or still have blank template prompts, note it but proceed with what's available. Do not ask the user to provide information that should be in their profile -- tell them which profile file to fill in instead.
 
@@ -67,7 +66,7 @@ Evaluate the PI's profile against the grant requirements across these dimensions
 
 **Strategic Value:**
 - Does this advance the PI's research agenda?
-- Does it align with the institution's strategic plan and the funder's stated priorities (see `profile/priorities/`)?
+- Does it match the institution's strategic plan (in its `institutions/` folder) and the funder's stated priorities?
 - Does it complement or compete with active/planned grants?
 - Is the funding level appropriate for the work proposed?
 - Does the timeline align with PI's availability?

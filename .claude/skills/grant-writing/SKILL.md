@@ -113,7 +113,7 @@ These rules apply to all grant writing output. No exceptions.
 - Include diversified revenue strategies, not just "seek additional grants"
 
 ### Funder Alignment
-- Read `profile/priorities/` for any institution and funder strategic-plan docs, and match the framing to them
+- Read the institution's strategic plan (in its `profile/institutions/` folder) and match the framing to it, alongside the funder's priorities
 - Mirror the funder's own language, priorities, and strategic plan
 - Customize every proposal to the specific funder; never submit generic text
 - Reference the funder's RFP language, prior awards, and stated interests
