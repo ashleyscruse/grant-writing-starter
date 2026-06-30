@@ -15,3 +15,6 @@ venv/
 # Solicitation PDFs and drafts can be large or sensitive — track deliberately.
 # Uncomment the next line if you'd rather keep solicitations out of Git:
 # grants/**/solicitation.pdf
+
+# Office lock/temp files
+~$*
