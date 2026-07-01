@@ -64,7 +64,7 @@ Each grant lives in `grants/{name}/`. When drafting:
 
 - The narrative draft is `proposal/main.tex` (or the equivalent `.docx` / `.md` the researcher uses).
 - **Budget:** the numbers live in the grant's `budget.xlsx` at the grant root, next to `team.md` (a spreadsheet the researcher edits in Excel or Google Sheets). Read it directly and draft `proposal/budget-justification.tex` from it, explaining every line. Keep the two in sync: if the sheet changes, update the justification, and make sure every narrative activity has a budget line and vice versa.
-- **Sources:** before drafting, read the grant's `literature/` folder (papers, notes, references the researcher dropped in). Ground claims and citations in those sources and in the `profile/`. If a claim is not supported by something there, flag it for the researcher to confirm; never invent a citation, statistic, or result.
+- **Sources:** before drafting, read the grant's `literature/` folder (papers, notes, references the researcher dropped in). Cite only what is in `literature/` and the `profile/`, and never invent a citation, statistic, or result. If a claim is unsupported, flag it. Only when `literature/` is empty or the researcher asks you to find literature may you propose real, DOI-linked references, clearly flagged for the researcher to verify and add to the folder.
 - **Rendering versions:** when asked to render, output the PDF to `proposal/versions/` as the next `vN.pdf`. Never overwrite an old version. Whenever a version is rendered, also create a matching `proposal/feedback/vN-feedback.md` with one empty heading per proposal section (plus General and Compliance) so the researcher only fills in notes; see the `latex-assistant` skill for the template. When revising, read the matching `proposal/feedback/vN-feedback.md` and carry every point through.
 - **Assembling the submission PDF:** read the solicitation to determine the required components and their order, and produce a single combined PDF. Place the budget justification **inside the body** if it counts toward the page limit, or **appended as a separate attachment** if it falls outside the page limit. Do not ask the researcher to restructure files; the pieces stay put and you arrange them at render time per the solicitation.
 
@@ -129,7 +129,7 @@ These rules apply to all grant writing output. No exceptions.
 - Write in paragraphs, never lists.
 - Avoid participial phrases.
 - Within a section, write flowing prose, not fragmented labels. Make the first sentence of each paragraph its main idea, so the first sentences read together as an abstract of the section.
-- Give references as hyperlinks to the known DOI.
+- Cite only the sources in the grant's `literature/` folder; do not cite anything that is not there. If that folder is empty, or the researcher asks you to help find literature, then find real references, flag them as suggestions to verify and add to `literature/`, and give every reference as a hyperlink to its known DOI.
 - Never use these words: Delve, Tapestry, Vibrant, Landscape, Realm, Embark, Excels, Vital, Weave, Intertwined, Truly, Fleeting, Enchanting, Amidst, Portrayal, Artful, Painted, Seizing, Trusted, Vision, Unfolding, Strive, Ever-evolving, Seamless, Compelling, Marveled, Subtlest, Transcends, Unlock, Unleash, Unveiling, Vast.
 
 ### Absolute Prohibitions
