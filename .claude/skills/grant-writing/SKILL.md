@@ -118,15 +118,23 @@ These rules apply to all grant writing output. No exceptions.
 - Customize every proposal to the specific funder; never submit generic text
 - Reference the funder's RFP language, prior awards, and stated interests
 
-### Formatting and Scanability
-- Use strategic formatting: white space, bold key phrases, headers, bulleted lists
-- Keep paragraphs to 3 to 5 sentences
-- Use topic sentences that state the point, then provide evidence
-- Include figures, tables, and diagrams to summarize data and timelines when appropriate
-- Design every section so a scanning reviewer grasps the key points from headers, bold text, and first sentences alone
+### Formatting
+- Defer to the solicitation for all formatting: font size, line spacing, margins, and page limits. Do not impose a house style; follow what the funder requires. The `latex-assistant` skill applies it.
+- Write each proposal section as a LaTeX `\section` (and `\subsection` where the solicitation names subsections) so headers are generated automatically when the document is formatted. Do not hand-format headers in bold.
+- Write in prose paragraphs. No bullet-point lists.
+- Use tables and logic models where they carry the content better than prose, and a Gantt chart for a timeline when one helps.
+
+### NSF prose directives
+- Write without adjectives unless one is explicitly requested.
+- Write in paragraphs, never lists.
+- Avoid participial phrases.
+- Within a section, write flowing prose, not fragmented labels. Make the first sentence of each paragraph its main idea, so the first sentences read together as an abstract of the section.
+- Give references as hyperlinks to the known DOI.
+- Never use these words: Delve, Tapestry, Vibrant, Landscape, Realm, Embark, Excels, Vital, Weave, Intertwined, Truly, Fleeting, Enchanting, Amidst, Portrayal, Artful, Painted, Seizing, Trusted, Vision, Unfolding, Strive, Ever-evolving, Seamless, Compelling, Marveled, Subtlest, Transcends, Unlock, Unleash, Unveiling, Vast.
 
 ### Absolute Prohibitions
 - No em dashes, ever. Use commas, colons, periods, or parentheses instead.
+- No bullet-point lists in the narrative. Use prose, and tables, logic models, or a Gantt chart when a visual carries it better.
 - No "It is not [X], it is [Y]" sentence structures or similar contrastive constructions that signal AI-generated text
 - No deficit-based framing of communities
 - No unsourced statistics or fabricated data
