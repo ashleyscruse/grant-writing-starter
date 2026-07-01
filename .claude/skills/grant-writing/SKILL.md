@@ -9,26 +9,25 @@ Write grant proposals that score well by mapping directly to funder review rubri
 
 ## Workflow
 
-### 1. Gather Context Before Writing
+### 1. Load the Context (do not re-gather it)
 
-Before drafting any section, confirm:
-- Who is the funder? (federal agency, foundation, corporation, congressional office)
-- What is the RFP/RFA/NOFO or funding opportunity?
-- What are the evaluation criteria and scoring rubric?
-- What are the page limits, font, margin, and formatting requirements?
-- What is the project, who does it serve, and where?
-- What data, prior results, or preliminary evidence is available?
+The intake is already done by `solicitation-review` and `grant-analyzer`, so read what they wrote; do not interrogate the researcher for it. Before drafting, read:
+- `grants/{name}/solicitation.md` -- the NSF program, the grant type, review criteria, required components, page limits, and formatting.
+- `grants/{name}/evaluation.md` -- the fit and the decision. Only draft if the decision was to pursue.
+- `profile/` -- the researcher, their `me/` files, and the institution and its strategic plan.
+- the grant's `literature/` folder -- the sources to cite.
 
-If any of these are missing, ask. Do not draft with assumptions about funder priorities or compliance requirements.
+Confirm the grant type (it drives step 2). If `solicitation.md` is missing or lacks the type or criteria, stop and run `solicitation-review` (or `grant-advisor`) first. Do not draft on assumptions.
 
 ### 2. Match the Grant Type
 
-Adjust tone, structure, and evidence standards to the funder type:
+Identify the NSF grant type from the solicitation, then draft to that type's rules. The type changes which sections carry the weight, the focus of the prose, and what reviewers score. Every NSF proposal still addresses Intellectual Merit and Broader Impacts. See [grant-types.md](references/grant-types.md) for the full per-type rules.
 
-- **Federal**: Mirror RFP language exactly. Use section headers from the evaluation criteria. Heavy on data, citations, validated instruments, and scored rubric alignment. See [grant-types.md](references/grant-types.md) for federal conventions.
-- **Foundation**: Lead with mission alignment and narrative. More conversational, shorter, story-driven with data support. See [grant-types.md](references/grant-types.md) for foundation conventions.
-- **Corporate**: Concise, business-oriented, mutual benefit framing. See [grant-types.md](references/grant-types.md) for corporate conventions.
-- **Congressional/Appropriations**: Community support documentation, federal authorization alignment, local economic impact. See [grant-types.md](references/grant-types.md) for congressional conventions.
+- **Research**: the research plan, methodology, objectives, and preliminary results; reviewers weight Intellectual Merit and the rigor of the approach.
+- **Planning**: the plan, the team and partners convened, milestones, and the larger effort it leads to; not written as a research proposal.
+- **Program / education**: program design, participants and recruitment, activities, evaluation plan, sustainability, and broadening participation.
+- **Conference / workshop**: the topic's significance, organizers, participants and broadened participation, agenda, dissemination, and outcomes.
+- **Equipment / instrumentation**: the instrument, the research it enables, the need, shared multi-user access, and a management and maintenance plan.
 
 ### 3. Draft the Section
 
