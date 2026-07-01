@@ -22,7 +22,7 @@ Confirm the grant type (it drives step 2). If `solicitation.md` is missing or la
 
 ### 2. Match the Grant Type
 
-Identify the NSF grant type from the solicitation, then draft to that type's rules. The type changes which sections carry the weight, the focus of the prose, and what reviewers score. Every NSF proposal still addresses Intellectual Merit and Broader Impacts. See [grant-types.md](references/grant-types.md) for the full per-type rules.
+Identify the NSF grant type from `grants/{name}/solicitation.md`, then draft to that type's rules. The type changes which sections carry the weight, the focus of the prose, and what reviewers score. Every NSF proposal still addresses Intellectual Merit and Broader Impacts. See [grant-types.md](references/grant-types.md) for the full per-type rules.
 
 - **Research**: the research plan, methodology, objectives, and preliminary results; reviewers weight Intellectual Merit and the rigor of the approach.
 - **Planning**: the plan, the team and partners convened, milestones, and the larger effort it leads to; not written as a research proposal.
