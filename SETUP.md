@@ -1,142 +1,39 @@
-# Setup: get the repo, keep it updated, and meet Sage
+# Setup: get the workspace open and meet Sage
 
-Three steps to get going, plus how to keep your copy up to date all week. However you do it, the whole folder ends up on your machine.
+Three steps. No command line needed.
 
-> **Windows or Mac?** The git commands below are the **same on both**. The only difference is the terminal you open:
-> - **Mac:** the built-in **Terminal** app.
-> - **Windows:** use **Git Bash** (it installs with Git) so every command here works exactly like it does on a Mac. If you use PowerShell or Command Prompt instead, the `git` commands still work, but a few navigation commands differ (for example, listing files is `ls` in Git Bash and Mac, and `dir` in PowerShell or Command Prompt).
+## 1. Get the files
 
----
+On the repo's green **Code** button, choose **Download ZIP**, then unzip it. That is the whole workspace, on your computer.
 
-## Step 1: Make your own copy
+(A ZIP is a one-time snapshot. If materials get added during the week, re-download to get them.)
 
-You need your own copy so you can save your work. Either way below, **your copy is yours and the original stays safe** (no one can edit my repo unless I add them as a collaborator). The only difference is whether your copy stays linked to mine:
+## 2. Open it in your tool
 
-| | **Fork** | **Use this template** |
-|---|---|---|
-| What it makes | Your own copy, **linked** to the original | Your own copy, **independent** (clean start) |
-| Can you edit my repo? | No | No |
-| Pull my updates during the week? | **Yes, one click** | Not automatically (you would connect it by hand) |
-| Best for | **This workshop** | A standalone project later |
+- **Claude Code** (recommended): open the folder and start Claude in it.
+- **Cursor** or **VS Code**: File, then Open Folder, then pick the unzipped folder.
 
-**For this week, choose Fork.** You will be able to pull any updates I push during the workshop with one click. Fork whichever way is comfortable for you.
+## 3. Say hi and meet Sage
 
-**Fork on the web (point and click):**
+In **Claude Code**, just say **hi**. It reads `CLAUDE.md` on its own, and **Sage**, your guide, introduces the process and starts filling in your profile.
 
-1. On the repo page, click **Fork** (top right) → **Create fork**.
-2. Your copy appears at `your-username/grant-writing-starter`. Continue to Step 2 to copy it to your computer.
-
-**Fork from the command line (one step):**
-```
-gh repo fork ashleyscruse/grant-writing-starter --clone
-```
-This forks it to your account, downloads it to your computer, and links it back to mine, all at once. It needs the GitHub CLI (`gh`) installed and `gh auth login` done first (see Step 2, Option C). If you use this, you can skip Step 2.
-
-**Want help during the workshop?** On your fork, go to **Settings → Collaborators → add `ashleyscruse`**. Your work stays yours; this just lets me look when you are stuck.
-
-## Step 2: Get it onto your computer
-
-Pick whichever you are comfortable with. All give you the full folder.
-
-### Option A: Download ZIP (graphical, no git)
-
-1. Green **Code** button → **Download ZIP**.
-2. Unzip it. Done.
-
-A ZIP is a one-time snapshot. To get later updates you would re-download. If you want to pull updates easily, use Option B or C instead.
-
-### Option B: GitHub Desktop (graphical, can update)
-
-1. Green **Code** button → **Open with GitHub Desktop → Clone**.
-2. To update later: open GitHub Desktop and click **Pull origin** (or **Fetch origin**).
-
-### Option C: Command line (git)
-
-First, let GitHub know it is you. You only do this once, and it is the same on Windows and Mac:
-
-1. Install the GitHub CLI (`gh`).
-2. Run:
-   ```
-   gh auth login
-   ```
-3. Choose **GitHub.com → HTTPS → "Login with a web browser"**, and follow the prompts.
-
-That stores your login so clone, push, and pull just work. (Alternatives: set up an SSH key, or use a Personal Access Token as your password when git asks.)
-
-Then copy your repo onto your computer. Use **your own fork's** URL (your username), not mine:
-```
-git clone https://github.com/YOUR-USERNAME/grant-writing-starter.git
-cd grant-writing-starter
-```
-
-## Step 3: Open it in your tool and meet Sage
-
-The **universal move** in any tool: open the folder, then tell the AI:
+In any other tool, paste this line to point the AI at Sage:
 
 > "Read CLAUDE.md and .claude/skills/setup-guide/SKILL.md, then be Sage and guide me."
 
-| Tool | How to open the folder | How to start Sage |
-|---|---|---|
-| **Claude Code** (the CLI "coworker") | `cd` into the folder, run `claude` | Just say **hi**. It reads `CLAUDE.md` automatically and Sage introduces the process. |
-| **Cursor** | File → Open Folder → your repo | Open chat (Cmd/Ctrl + L), paste the universal line |
-| **VS Code + Copilot** | File → Open Folder → your repo | Open Copilot Chat, paste the universal line |
-| **Antigravity** | Open the project folder | In the agent panel, paste the universal line |
-| **Claude desktop app** | Create/open a Project, add this folder | Paste the universal line |
-| **Claude on the web** (claude.ai) | No folder to mount here. **Upload** `CLAUDE.md`, `.claude/skills/setup-guide/SKILL.md`, and the profile file you are filling (start with `profile/you/identity.md`) into a Project or chat | Paste the universal line |
-
-> **Claude Code** is the only one that reads `CLAUDE.md` on its own, so "hi" is enough. Everywhere else, the universal line points the AI at Sage. For **Claude on the web**, keep the downloaded folder on your computer so you can upload files in and save your work back out.
-
----
-
-## Keep your copy up to date
-
-Your project lives in two places: **GitHub** (online) and **your computer** (offline). Git keeps them in sync. Think in two directions.
-
-**You changed files on your computer, send them up:**
-```
-git status                       # see what changed
-git add .                        # stage all your changes
-git commit -m "what I changed"   # save them with a note
-git push                         # send them to GitHub
-```
-
-**Files changed on the GitHub website, bring them down:**
-```
-git pull                         # update your computer with the latest from GitHub
-```
-
-> **Important when you fill in your profile on the website.** If you edit a file in the GitHub web interface and click **Commit changes**, those edits are saved on GitHub but **not yet on your laptop**. To use them offline and let your AI tools read them, run `git pull` on your computer. So the flow is: edit on the website → **Commit changes** on the website → `git pull` on your computer.
-
-### The handful of commands you will actually use
-
-| Command | What it does |
-|---|---|
-| `git status` | Show what has changed |
-| `git add .` | Stage all your changes |
-| `git commit -m "..."` | Save staged changes with a message |
-| `git push` | Send your commits up to GitHub |
-| `git pull` | Bring GitHub's latest down to your computer |
-| `git clone <url>` | Copy a repo onto your computer (first time only) |
-
-These are identical on Windows (Git Bash) and Mac.
-
-### Getting updates I add during the workshop
-
-If I add shared materials to the starter during the week, connect to it once:
-```
-git remote add upstream https://github.com/ashleyscruse/grant-writing-starter.git
-```
-Then any time you want the latest, pull with **merge** (the beginner-safe way):
-```
-git pull --no-rebase --no-edit upstream main
-```
-- `--no-rebase` merges the two histories, so it keeps **both** your commits and mine. This is the safe choice.
-- `--no-edit` accepts the default merge message, so it does not drop you into a text editor.
-
-If git ever says your branch and mine have "diverged" or asks how to reconcile them, **this same command is the fix.**
-
----
-
 ## What happens next
 
-Sage gets your workspace set up and walks you through your **profile**: identity, research, teaching and mentoring, grant history, and your institution. Those filled-in files become the AI's knowledge base for the rest of the week. Every grant evaluation and every proposal draft reads from them, so you fill this in once and reuse it on every proposal for years.
+Sage walks you through your **profile**: who you are, your research, your teaching and mentoring, your grant history, and your institution. Those files become the AI's knowledge base for everything after, so you fill this in once and reuse it on every proposal. From there, see [GUIDE.md](GUIDE.md) for the full workflow.
+
+---
+
+## Optional: use git instead of a ZIP
+
+If you are comfortable with git and want to pull updates during the week, clone your own copy instead of downloading the ZIP:
+
+```
+git clone https://github.com/ashleyscruse/grant-writing-starter.git
+cd grant-writing-starter
+```
+
+Then `git pull` any time to get the latest. If you are not sure what this means, ignore it and use the ZIP.
