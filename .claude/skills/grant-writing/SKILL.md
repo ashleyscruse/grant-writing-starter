@@ -14,6 +14,7 @@ Write grant proposals that score well by mapping directly to funder review rubri
 The intake is already done by `solicitation-review` and `grant-analyzer`, so read what they wrote; do not interrogate the researcher for it. Before drafting, read:
 - `grants/{name}/solicitation.md` -- the NSF program, the grant type, review criteria, required components, page limits, and formatting.
 - `grants/{name}/evaluation.md` -- the fit and the decision. Only draft if the decision was to pursue.
+- `grants/{name}/team.md` -- who is on this proposal (personnel and roles).
 - `profile/` -- the researcher, their `me/` files, and the institution and its strategic plan.
 - the grant's `literature/` folder -- the sources to cite.
 
