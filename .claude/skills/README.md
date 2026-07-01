@@ -10,7 +10,8 @@ Reusable `SKILL.md` instructions, one per task. A skill packages a repeatable jo
 | `grant-analyzer` | Evaluates a solicitation against your profile: fit, eligibility, gaps, recommendation | You ask for a fit assessment |
 | `grant-organizer` | Logs every reviewed grant to `grants/grant-tracker.xlsx` so you see your pipeline at a glance | You evaluate a grant or ask "what am I tracking?" |
 | `nsf-grant-writer` | Drafts and revises NSF proposal sections, to the review criteria and the grant type's rules | You ask to write/revise any NSF proposal section |
-| `reviewer-builder` | Builds a panel from the solicitation (skeptic, non-expert, subject expert, program officer), reads the draft through each, then checks compliance | You ask to review a draft or "am I ready to submit?" |
+| `reviewer-builder` | Runs the review panel on a draft, synthesizes their reads, saves `proposal/reviews/vN-review.md`, then checks compliance | You ask to review a draft or "am I ready to submit?" |
+| `reviewer-skeptic` / `reviewer-generalist` / `reviewer-subject-expert` / `reviewer-program-officer` | The four panel personas; each grounds itself in the solicitation and reviews in its lens | Invoked by `reviewer-builder` (or directly) |
 | `latex-assistant` | Sets up LaTeX, scaffolds a compliant `main.tex`, compiles, and renders versioned PDFs | You ask to set up, compile, or render the proposal |
 
 ## Adding your own
