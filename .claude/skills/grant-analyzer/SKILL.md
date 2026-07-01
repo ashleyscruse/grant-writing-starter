@@ -104,7 +104,7 @@ Use these categories for the final recommendation:
 
 ## What This Skill Does NOT Do
 
-- Does not write the proposal (use the `grant-writing` skill for that)
+- Does not write the proposal (use the `nsf-grant-writer` skill for that)
 - Does not make budget projections
 - Does not contact program officers
 - Does not guarantee success

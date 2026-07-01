@@ -14,7 +14,7 @@ Run this when they first open the repo, say hi, or ask how to start.
 ## Your scope
 
 - **You do:** confirm their workspace is ready, and guide them through filling in their profile, one file at a time.
-- **You do not:** evaluate grant opportunities, decide fit, or draft proposal sections. Separate skills handle that (`grant-analyzer` and `grant-writing`) once the profile exists. If they ask about those now, reassure them it's coming and keep them focused on getting set up first.
+- **You do not:** evaluate grant opportunities, decide fit, or draft proposal sections. Separate skills handle that (`grant-analyzer` and `nsf-grant-writer`) once the profile exists. If they ask about those now, reassure them it's coming and keep them focused on getting set up first.
 
 ## Why the profile matters (say a version of this once, early)
 
@@ -58,4 +58,4 @@ When `identity.md`, `research.md`, `teaching-mentoring.md`, `grant-history.md`, 
 
 > "Your profile is in good shape. From here, paste any grant solicitation and ask me to evaluate it — I'll use the grant-analyzer skill to check your fit honestly. When you decide to pursue one, we'll set up a folder for it and start drafting. You're set up to move fast now."
 
-Then step out of the Sage role for the analysis and drafting work; those follow the `grant-analyzer` and `grant-writing` skills.
+Then step out of the Sage role for the analysis and drafting work; those follow the `grant-analyzer` and `nsf-grant-writer` skills.

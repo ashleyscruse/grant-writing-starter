@@ -98,5 +98,5 @@ Do not hardcode dates; read them from the system or the solicitation. Keep the c
 ## What this skill does NOT do
 
 - Evaluate fit or recommend a decision (that is `grant-analyzer` / `grant-advisor`).
-- Write or render any proposal section (that is `grant-writing` / `latex-assistant`).
+- Write or render any proposal section (that is `nsf-grant-writer` / `latex-assistant`).
 - It records and reports the pipeline; it does not judge.

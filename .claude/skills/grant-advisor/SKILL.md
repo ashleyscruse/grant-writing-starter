@@ -52,12 +52,12 @@ Then stop.
 
 ## The hard line
 
-- **Stop at the decision.** Do not draft any proposal section here. Drafting is a separate, deliberate step (the `grant-writing` and `nsf-*` skills) the researcher chooses after a Pursue decision.
+- **Stop at the decision.** Do not draft any proposal section here. Drafting is a separate, deliberate step (the `nsf-grant-writer` skill) the researcher chooses after a Pursue decision.
 - **Be honest about fit and gaps.** Surface what a reviewer would mark down.
 - **Never fabricate** requirements, dates, award amounts, or profile details. If the solicitation or profile does not say it, it stays unknown.
 
 ## What this skill does NOT do
 
-- Write or render proposal sections (that is `grant-writing`, the `nsf-*` skills, and `latex-assistant`).
+- Write or render proposal sections (that is `nsf-grant-writer` and `latex-assistant`).
 - Submit anything or contact a program officer.
 - Decide *for* the researcher; it recommends and records. The researcher owns the go.

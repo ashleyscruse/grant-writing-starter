@@ -9,9 +9,9 @@ Reusable `SKILL.md` instructions, one per task. A skill packages a repeatable jo
 | `solicitation-review` | Parses a solicitation into a structured requirements brief (dates, eligibility, criteria, page limits) | You paste an RFP/NOFO and want it broken down |
 | `grant-analyzer` | Evaluates a solicitation against your profile: fit, eligibility, gaps, recommendation | You ask for a fit assessment |
 | `grant-organizer` | Logs every reviewed grant to `grants/grant-tracker.xlsx` so you see your pipeline at a glance | You evaluate a grant or ask "what am I tracking?" |
-| `grant-writing` | Drafts and revises proposal sections, mapped to the funder's review rubric | You ask to write/revise any proposal section |
+| `nsf-grant-writer` | Drafts and revises NSF proposal sections, to the review criteria and the grant type's rules | You ask to write/revise any NSF proposal section |
+| `grant-review` | Reads a draft as an NSF panel would, then checks compliance and formatting against the solicitation | You ask to review a draft or "am I ready to submit?" |
 | `latex-assistant` | Sets up LaTeX, scaffolds a compliant `main.tex`, compiles, and renders versioned PDFs | You ask to set up, compile, or render the proposal |
-| `nsf-broader-impacts` | Drafts a scored-well NSF Broader Impacts section from your real mentoring/outreach record | You ask to write/improve NSF Broader Impacts |
 
 ## Adding your own
 

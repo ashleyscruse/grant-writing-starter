@@ -10,7 +10,7 @@ Own the document mechanics so the writing skills can stay focused on prose. Set 
 ## Scope and boundary
 
 - **You do:** detect/set up the toolchain, scaffold `main.tex` and `budget-justification.tex`, enforce formatting compliance, compile, fix LaTeX errors, render and version PDFs.
-- **You do NOT:** write proposal narrative (that is `grant-writing` and the `nsf-*` section skills) or judge fit (that is `grant-analyzer`). If the document fails to build, fix the LaTeX, not the argument.
+- **You do NOT:** write proposal narrative (that is `nsf-grant-writer`) or judge fit (that is `grant-analyzer`). If the document fails to build, fix the LaTeX, not the argument.
 
 ## Toolchain
 
@@ -25,12 +25,12 @@ If none is installed, do not fake a build. Tell the researcher the one install s
 
 1. Read `grants/{name}/solicitation.md` (the parsed brief from `solicitation-review`) for the required formatting: margins, font family and size, line spacing, and the required components and their order.
 2. If no rules are specified, default to **NSF PAPPG**: margins at least 1 inch on all sides, a readable font no smaller than 10 pt (11–12 pt for Computer Modern / Times-equivalent), single spacing, and no more than 6 lines of text per inch.
-3. Write `proposal/main.tex` with: a `geometry` block for the margins, the font/size setup, and section headers that mirror the solicitation's required components (e.g., Project Summary, Project Description, References Cited). Use the worked example `grants/EXAMPLE-NSF-HBCU-EiR/proposal/main.tex` as a structural model.
+3. Write `proposal/main.tex` with: a `geometry` block for the margins, the font/size setup, and section headers that mirror the solicitation's required components (e.g., Project Summary, Project Description, References Cited). Mirror the required components and their order from the solicitation.
 4. Keep content out of it. Leave each section as a brief placeholder comment so the writing skills fill it in. Never invent narrative here.
 
 ## Budget justification
 
-When asked, read the grant's `budget.xlsx` (one level up from `proposal/`, at the grant root) and render `proposal/budget-justification.tex` into the PDF. The numbers come from the spreadsheet; the prose comes from `grant-writing`. Your job is to make it typeset cleanly and stay within any page limit.
+When asked, read the grant's `budget.xlsx` (one level up from `proposal/`, at the grant root) and render `proposal/budget-justification.tex` into the PDF. The numbers come from the spreadsheet; the prose comes from `nsf-grant-writer`. Your job is to make it typeset cleanly and stay within any page limit.
 
 ## Compiling and versioning
 

@@ -10,7 +10,7 @@ Turn a raw solicitation into a clean, structured requirements brief that the res
 ## When to run
 
 - The researcher pastes or links a solicitation and wants to understand what it asks for.
-- Before `grant-analyzer` (fit) or `grant-writing` (drafting): both work better against a parsed brief than against raw solicitation text.
+- Before `grant-analyzer` (fit) or `nsf-grant-writer` (drafting): both work better against a parsed brief than against raw solicitation text.
 
 ## Input
 
@@ -49,10 +49,10 @@ Capture all of these that the solicitation specifies:
 
 - To **grant-analyzer** to judge fit against the profile.
 - To **grant-organizer** to log the opportunity in the tracker.
-- To **grant-writing** and the NSF-section skills to draft each required component against the quoted review criteria and page limits.
+- To **nsf-grant-writer** to draft each required component against the quoted review criteria and page limits.
 
 ## What this skill does NOT do
 
 - Judge fit or recommend go/no-go (that is `grant-analyzer`).
-- Draft any proposal section (that is `grant-writing` and the `nsf-*` section skills).
+- Draft any proposal section (that is `nsf-grant-writer`).
 - Invent requirements the solicitation does not state. Unknown stays unknown until confirmed.

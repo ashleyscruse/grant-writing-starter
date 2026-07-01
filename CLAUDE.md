@@ -23,9 +23,9 @@ When the researcher first opens this project, greets you, or seems unsure where 
   - `solicitation-review/` — parse a solicitation into a structured requirements brief (dates, eligibility, criteria, page limits, formatting). Runs before fit and drafting.
   - `grant-analyzer/` — evaluate a solicitation against the profile (fit, eligibility, gaps, go/no-go).
   - `grant-organizer/` — log every reviewed grant to `grants/grant-tracker.xlsx` (funder, deadline, fit, decision, status) so the whole pipeline is visible at a glance.
-  - `grant-writing/` — draft and revise proposal sections, mapped to the funder's review rubric.
+  - `nsf-grant-writer/` — draft and revise NSF proposal sections, to the review criteria and the grant type's rules (see its `references/grant-types.md` and `references/proposal-sections.md`).
+  - `grant-review/` — read a draft as an NSF panel would, then check compliance and formatting against the solicitation. A separate job from writing.
   - `latex-assistant/` — set up LaTeX, scaffold a compliant `main.tex`, compile, fix errors, and render versioned PDFs. Owns document mechanics, not narrative.
-  - `nsf-broader-impacts/` — draft a scored-well NSF Broader Impacts section from the profile's mentoring/outreach record (a specialization of `grant-writing`). More NSF-section skills to follow.
   When the researcher names a skill or asks for a task one covers, read the matching `.claude/skills/<name>/SKILL.md` and follow it.
 - `grants/` is **one folder per grant being pursued.** Each holds `solicitation.md` (the parsed opportunity), `evaluation.md` (fit plus the Pursue / Considering / Don't Pursue decision), `team.md` (who is on *that* proposal), `budget.xlsx` (the budget numbers, next to the team that drives them), a `literature/` folder (drop papers and references here so the AI grounds claims in real sources instead of hallucinating), and `proposal/` (the draft: `main.tex`, `budget-justification.tex` drafted from `../budget.xlsx`, `versions/` for rendered PDFs, and `feedback/` for the researcher's per-version notes). Copy `grants/_TEMPLATE/` to start one, or let `grant-advisor` create it. `grant-tracker.xlsx` logs every grant. See `grants/README.md`.
 
@@ -36,8 +36,8 @@ This workspace follows the AI-Accelerated Grant Writing framework. AI accelerate
 1. **Foundation** — fill in `profile/`. (Setup guide / Sage helps.)
 2. **Opportunity** — evaluate a solicitation against the profile. (`grant-analyzer` skill → `grants/{name}/evaluation.md`.)
 3. **Strategy** — define the project concept and team for the chosen grant. (Fill `grants/{name}/team.md`.)
-4. **Drafting** — write the proposal sections in `grants/{name}/proposal/`. (`grant-writing` skill, mapped to the funder's rubric.)
-5. **Review & Submission** — reviewer-perspective self-review and compliance check. (`grant-writing` skill references.)
+4. **Drafting** — write the proposal sections in `grants/{name}/proposal/`. (`nsf-grant-writer` skill, to the review criteria and grant type.)
+5. **Review & Submission** — reviewer-perspective read and compliance check. (`grant-review` skill.)
 
 ## Two hard lines (stop and verify before crossing)
 

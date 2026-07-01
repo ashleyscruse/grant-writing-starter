@@ -1,11 +1,11 @@
 ---
-name: grant-writing
-description: "Writes grant proposals, narratives, and supporting documents in a structured, criteria-aligned format. Produces needs statements, project descriptions, evaluation plans, budget narratives, sustainability plans, logic models, letters of support drafts, and executive summaries. Use when the user asks to write, draft, revise, or improve any grant proposal section, respond to an RFP/RFA/NOFO, prepare a letter of inquiry, or develop any funding application narrative. Also use when the user mentions 'grant,' 'proposal,' 'funding application,' 'RFP response,' 'needs statement,' 'budget narrative,' 'logic model,' 'evaluation plan,' 'letter of support,' 'sustainability plan,' 'appropriations request,' or 'community project funding.'"
+name: nsf-grant-writer
+description: "Drafts and revises NSF proposal sections in the researcher's voice, to the review criteria and the grant type's rules. Produces the Project Summary, Project Description, Broader Impacts, Facilities and Other Resources, Data Management and Sharing Plan, Mentoring Plan, and Budget Justification. Use when the user asks to write, draft, revise, or improve any NSF proposal section. Also use when the user mentions 'draft my Project Description,' 'write the Broader Impacts,' 'Project Summary,' 'budget justification,' 'facilities section,' or 'data management plan.'"
 ---
 
-# Grant Writing
+# NSF Grant Writer
 
-Write grant proposals that score well by mapping directly to funder review rubrics, using evidence-based claims, and maintaining internal consistency across all sections.
+Draft NSF proposal sections that score well: mapped to the review criteria and the grant type's rules, grounded in the researcher's real record, in prose, and internally consistent across sections.
 
 ## Workflow
 
@@ -32,29 +32,20 @@ Identify the NSF grant type from `grants/{name}/solicitation.md`, then draft to 
 
 ### 3. Draft the Section
 
-For section-specific structure, required components, and common mistakes, see [proposal-sections.md](references/proposal-sections.md). This covers:
-- Executive Summary / Abstract
-- Statement of Need
-- Goals, Objectives, and Outcomes
-- Project Description / Methodology
-- Logic Model
-- Evaluation Plan
-- Organizational Capacity
-- Sustainability Plan
-- Budget and Budget Narrative
-- Letters of Support and Partnerships
+For section-by-section structure, what reviewers want, and pitfalls, see [proposal-sections.md](references/proposal-sections.md). It covers the NSF components:
+- Project Summary (Overview, Intellectual Merit, Broader Impacts)
+- Project Description
+- Broader Impacts
+- Results from Prior NSF Support
+- Facilities, Equipment and Other Resources
+- Data Management and Sharing Plan
+- Mentoring Plan
+- Budget Justification
+- References Cited
 
-### 4. Review Against the Rubric
+### 4. Hand off to review
 
-After drafting, verify:
-- Every evaluation criterion is addressed explicitly
-- Section headers match the funder's criteria or RFP structure
-- Every narrative activity has a corresponding budget line (and vice versa)
-- Goals, methods, evaluation, and budget are internally consistent
-- Numbers, dates, and figures match across all sections
-- Page limits and formatting requirements are met
-
-For what reviewers look for and common mistakes, see [reviewer-perspective.md](references/reviewer-perspective.md).
+Drafting and reviewing are separate jobs. When a draft is ready, run the `grant-review` skill for the reviewer-perspective read and the compliance and formatting check against the solicitation. Do not self-review here.
 
 ---
 
@@ -146,6 +137,5 @@ These rules apply to all grant writing output. No exceptions.
 
 ## References
 
-- [proposal-sections.md](references/proposal-sections.md): Detailed guidance for each proposal section (needs statement, goals/objectives, methodology, evaluation, budget, sustainability, letters of support, logic models)
-- [grant-types.md](references/grant-types.md): Conventions for federal, foundation, corporate, and congressional grants
-- [reviewer-perspective.md](references/reviewer-perspective.md): What reviewers look for, red flags, common mistakes, and scanability strategies
+- [proposal-sections.md](references/proposal-sections.md): Per-section guidance for the NSF components (Project Summary, Project Description, Broader Impacts, Facilities, DMP, Mentoring Plan, Budget Justification, References)
+- [grant-types.md](references/grant-types.md): The ten NSF grant types and the per-type writing rules
