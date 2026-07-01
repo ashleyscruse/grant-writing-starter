@@ -45,7 +45,7 @@ For section-by-section structure, what reviewers want, and pitfalls, see [propos
 
 ### 4. Hand off to review
 
-Drafting and reviewing are separate jobs. When a draft is ready, run the `grant-review` skill for the reviewer-perspective read and the compliance and formatting check against the solicitation. Do not self-review here.
+Drafting and reviewing are separate jobs. When a draft is ready, run the `reviewer-builder` skill for the reviewer-perspective read and the compliance and formatting check against the solicitation. Do not self-review here.
 
 ---
 
