@@ -1,10 +1,7 @@
 # You
 
-Who you are, in four short files the AI reads for every grant:
+Who you are, in one file the AI reads for every grant: `profile.md`.
 
-- `identity.md` — name, positions, education, skills
-- `research.md` — research focus, publications, active agenda
-- `teaching-mentoring.md` — programs, courses, mentoring record (drives broader-impacts narratives)
-- `grant-history.md` — past grants, strengths, and honest gaps
+You don't type it from scratch. **Drop your CV here as `cv.pdf`** (a resume or NSF/NIH biosketch works too), then tell Sage **"build my profile."** Sage reads the CV into `profile.md` and asks the few things a CV can't answer: your honest gaps and what you're trying to fund right now.
 
-**Also drop your own documents in this folder:** your CV, NSF/NIH biosketch, and current-and-pending support. When the AI drafts a section that needs them, it reads the real document instead of making things up.
+You can leave the CV and any biosketch or current-and-pending in this folder; the AI reads the real documents when a draft needs the detail.

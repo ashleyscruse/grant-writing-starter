@@ -4,21 +4,17 @@ This is a grant-writing workspace. You are helping a researcher find, evaluate, 
 
 ## First contact
 
-When the researcher first opens this project, greets you, or seems unsure where to start, do this before anything else: read `.claude/skills/setup-guide/SKILL.md` and follow it. Become **Sage**, their guide, introduce yourself, and offer to walk them through filling in their profile (starting with `identity.md`). Those filled-in profile files are your knowledge base for everything that follows.
+When the researcher first opens this project, greets you, or seems unsure where to start, do this before anything else: read `.claude/skills/setup-guide/SKILL.md` and follow it. Become **Sage**, their guide, introduce yourself, and offer to build their profile from their CV (the `cv-import` skill) plus a few questions. That filled-in `profile/me/profile.md` is your knowledge base for everything that follows.
 
 ## How this workspace is organized
 
 - `profile/` — **the researcher's reusable context.** The knowledge base every skill reads, the same for every grant. Blank until filled; the setup guide helps fill it. Three parts:
-  - `me/` — who they are. Read these for any analysis or drafting:
-    - `identity.md` — name, positions, education, skills
-    - `research.md` — research focus, publications, active agenda (the most important file for fit analysis)
-    - `teaching-mentoring.md` — mentoring record, programs, courses (drives NSF broader-impacts narratives)
-    - `grant-history.md` — past grants, strengths, and **honest gaps** (the gaps section is what prevents wasted effort)
-    - plus any documents they dropped in (CV, biosketch, current-and-pending). Read them when a section needs that detail.
+  - `me/` — who they are, in one `profile.md`: identity, research, teaching/mentoring, grant history, plus **strengths, honest gaps, and current priorities** (the gaps section is what prevents wasted effort). Read it for any analysis or drafting. Built from the researcher's CV (dropped in `me/`) by the `cv-import` skill, then completed by Sage's interview. Read any CV / biosketch / current-and-pending in the folder when a section needs that detail.
   - `collaborators/` — one folder per person (current or prospective). Each holds a `profile.md` plus their CV / biosketch. Skip the `_TEMPLATE/` folder.
   - `institutions/` — one folder per institution. Each holds a `profile.md` plus its strategic plan, facilities document, and letters. Skip the `_TEMPLATE/` folder.
 - `.claude/skills/` — reusable `SKILL.md` instructions, one per task. (Hidden machinery the researcher never needs to open; you load it automatically.)
   - `setup-guide/` — **Sage**, the onboarding guide. Run on first contact.
+  - `cv-import/` — build a `profile.md` from a CV, for the researcher (`profile/me/`, then ask for gaps and priorities) or for a collaborator (`profile/collaborators/<person>/`, then ask relationship and what they bring). Sage uses this on the fast path.
   - `grant-advisor/` — **end-to-end intake.** Given a solicitation URL or PDF, runs the whole opportunity loop in order (parse, evaluate fit, decide Pursue / Considering / Don't Pursue, log the tracker, save a `grants/{name}/` folder with `solicitation.md` and `evaluation.md`). The researcher's "should I pursue this?" becomes one command. Stops at the decision; does not draft.
   - `solicitation-review/` — parse a solicitation into a structured requirements brief (dates, eligibility, criteria, page limits, formatting). Runs before fit and drafting.
   - `grant-analyzer/` — evaluate a solicitation against the profile (fit, eligibility, gaps, go/no-go).

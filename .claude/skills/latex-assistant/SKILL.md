@@ -14,12 +14,18 @@ Own the document mechanics so the writing skills can stay focused on prose. Set 
 
 ## Toolchain
 
-Detect what is installed and use the first available, in this order:
-1. `tectonic` (self-contained, fetches packages automatically) — preferred when present.
-2. `latexmk` (drives `pdflatex`/`bibtex` and reruns to resolve references) — the reliable default on TeX Live / MacTeX.
-3. `pdflatex` directly (run twice if there are references/labels).
+Most participants will not have a LaTeX engine installed. Before rendering any PDF, set one up automatically, then confirm it works.
 
-If none is installed, do not fake a build. Tell the researcher the one install step for their platform: macOS `brew install --cask mactex-no-gui` (or `brew install tectonic`), Linux `sudo apt-get install texlive-full` (or `tectonic`), then retry.
+**Preferred: `tectonic`** (self-contained, fetches packages on its own, no full TeX install needed). Detect the operating system and install it:
+- **macOS:** `brew install tectonic`. If Homebrew is missing, install it first with `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`, then `brew install tectonic`.
+- **Windows:** `winget install tectonic`.
+- **Linux:** `sudo apt-get install -y tectonic` (or the distribution's equivalent).
+
+After installing, run `tectonic --version` to confirm it works, then compile `.tex` files to PDF with `tectonic`.
+
+**If a toolchain is already present,** use the first available instead of installing, in this order: `tectonic`, then `latexmk` (drives `pdflatex`/`bibtex` and reruns to resolve references), then `pdflatex` directly (run twice if there are references or labels).
+
+**If the install is blocked** (no admin rights, restricted network), do not fake a build. Generate the `.tex` only and tell the participant to render it free at [overleaf.com](https://overleaf.com): create a new project, upload the `.tex`, and download the compiled PDF.
 
 ## Scaffolding a compliant main.tex
 

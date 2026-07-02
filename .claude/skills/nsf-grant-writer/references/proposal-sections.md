@@ -33,7 +33,7 @@ Reviewers weight rigor, feasibility, and how convincingly Intellectual Merit and
 
 ## Broader Impacts
 
-One of NSF's two review criteria, weighted equally with Intellectual Merit. A specific, credible, assessable plan for the societal benefit of the work, grounded in the researcher's real record (`profile/me/teaching-mentoring.md`), not generic good intentions.
+One of NSF's two review criteria, weighted equally with Intellectual Merit. A specific, credible, assessable plan for the societal benefit of the work, grounded in the researcher's real record (`profile/me/profile.md`), not generic good intentions.
 
 - State the societal benefit plainly, tied to one or more NSF goals (full participation of groups underrepresented in STEM, improved STEM education and educator development, public engagement, broadening participation, partnerships, national security, economic competitiveness, infrastructure). Pick the goals the work genuinely serves.
 - Give a concrete activity plan: activities, audiences, numbers reached, timeline, and the partners or programs that carry them. Tie to existing infrastructure so it reads as feasible.

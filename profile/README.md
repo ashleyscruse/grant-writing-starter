@@ -1,9 +1,9 @@
 # Profile
 
-Your reusable context. The AI reads this for every grant, so you fill it in once and never re-explain who you are. It has three parts:
+Your reusable context. The AI reads this for every grant, so you set it up once and never re-explain who you are. Three parts:
 
-- **`me/`** — who you are: identity, research, teaching and mentoring, grant history. Drop your own CV and biosketch here too.
-- **`collaborators/`** — the people you work with or plan to work with. One folder per person, holding a short profile plus their CV / biosketch.
+- **`me/`** — who you are, in one `profile.md`. Drop your CV in this folder and Sage builds it for you.
+- **`collaborators/`** — the people you work with or plan to work with. One folder per person (optional, added when a grant needs it).
 - **`institutions/`** — your institution(s). One folder per institution, holding a short profile plus its facilities document and letters.
 
-Your guide, **Sage**, can interview you and fill these in. The more specific and honest you are, the better the AI's analysis and drafts, and the less it has to guess.
+Your guide, **Sage**, can build your profile from your CV and fill the rest in by asking. The more specific and honest you are, the better the AI's analysis and drafts.

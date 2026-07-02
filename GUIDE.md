@@ -20,7 +20,7 @@ You only ever touch two folders: `profile/` (your context) and `grants/` (your g
 
 Say hi and Sage walks you through it, one file at a time. You are filling in:
 
-- `profile/me/` -- who you are: `identity.md`, `research.md`, `teaching-mentoring.md`, `grant-history.md`. Drop your CV or biosketch in this folder too.
+- `profile/me/` -- who you are: `profile.md`, `profile.md`, `profile.md`, `profile.md`. Drop your CV or biosketch in this folder too.
 - `profile/institutions/` -- one folder per institution. Fill its `profile.md`, and drop in the institution's strategic plan and facilities document. This sets eligibility and gives the AI what to align your proposals to.
 - `profile/collaborators/` -- one folder per collaborator (add these when a specific grant needs them).
 
